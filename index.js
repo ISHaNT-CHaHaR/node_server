@@ -39,9 +39,7 @@ const server=http.createServer((req,res)=>{
         res.end('product ');
     }
     else{
-        res.writeHead('404',{
-            'Conent-type ':'text/html'
-        });
+        res.writeHead(404);
         res.end('<h1> page not found!</h1>');
     }
    
