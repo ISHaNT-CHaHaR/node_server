@@ -26,13 +26,13 @@ console.log("will read file!");
 //SERVER
  
 const server=http.createServer((req,res)=>{
-    res.end('hello from the server');
-
+    console.log(req);
 });
 
 server.listen(8000,'127.0.0.1',()=>{
     console.log('server has been started');
 })
+
 
 
 
